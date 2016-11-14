@@ -1,13 +1,15 @@
 ﻿using Xunit;
+using SimplerParser.Core;
+using System.Linq;
 
 namespace Tests
 {
     public class Tests
     {
         [Fact]
-        public void Test1() 
+        public void Tokenizer_Tests() 
         {
-            Assert.True(SimplerParser.Core.Class1.Method1());
+            Assert.NotNull(Lexer.Lex(string.Empty).First());
         }
     }
 }
