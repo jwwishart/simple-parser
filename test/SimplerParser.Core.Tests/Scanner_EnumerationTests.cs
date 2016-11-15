@@ -73,6 +73,10 @@ namespace Tests
             }
         }
 
+        // TODO: test column reset after newline
+        // TODO: normalize newlines if asked t
+        // TODO: ???
+
         [Fact]
         public void Scanner_ForEach_LineTest() {
             using (var sut = new Scanner("Test\nTest")) {
